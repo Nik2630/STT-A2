@@ -1,0 +1,376 @@
+--- Run 1 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 2 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 3 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 4 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.42s ===============================
+--- Run 5 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 6 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.42s ===============================
+--- Run 7 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 8 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 9 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.43s ===============================
+--- Run 10 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+../../../../miniconda3/envs/stt6/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../../../../miniconda3/envs/stt6/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+../../../../miniconda3/envs/stt6/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/nikhilesh/acad/stt/lab6/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.41s ===============================
+--- Run 1 ---
+--- Run 2 ---
+--- Run 3 ---
+--- Run 1 ---
+--- Run 2 ---
+--- Run 3 ---

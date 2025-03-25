@@ -1,0 +1,309 @@
+--- Combined xdist+runparallel Run 1 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+created: 16/16 workers
+16 workers [387 items]
+
+........................................................................ [ 18%]
+........................................................................ [ 37%]
+.F.........F........................................F................... [ 55%]
+........................................................................ [ 74%]
+........................................................................ [ 93%]
+.................F.........                                              [100%]
+=================================== FAILURES ===================================
+__________________________ TestBinaryHeap.test_insert __________________________
+[gw4] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_heap.TestBinaryHeap testMethod=test_insert>
+
+    def test_insert(self):
+        # Before insert 2: [0, 4, 50, 7, 55, 90, 87]
+        # After insert:  [0, 2, 50, 4, 55, 90, 87, 7]
+        self.min_heap.insert(2)
+>       self.assertEqual([0, 2, 50, 4, 55, 90, 87, 7],
+                         self.min_heap.heap)
+E       AssertionError: Lists differ: [0, 2, 50, 4, 55, 90, 87, 7] != [0, 2, 2, 4, 50, 90, 87, 7, 55]
+E       
+E       First differing element 2:
+E       50
+E       2
+E       
+E       Second list contains 1 additional elements.
+E       First extra element 8:
+E       55
+E       
+E       - [0, 2, 50, 4, 55, 90, 87, 7]
+E       + [0, 2, 2, 4, 50, 90, 87, 7, 55]
+
+tests/test_heap.py:29: AssertionError
+________________________ TestBinaryHeap.test_remove_min ________________________
+[gw4] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_heap.TestBinaryHeap testMethod=test_remove_min>
+
+    def test_remove_min(self):
+        ret = self.min_heap.remove_min()
+        # Before remove_min : [0, 4, 50, 7, 55, 90, 87]
+        # After remove_min: [7, 50, 87, 55, 90]
+        # Test return value
+>       self.assertEqual(4, ret)
+E       AssertionError: 4 != 7
+
+tests/test_heap.py:38: AssertionError
+_________________________ TestSuite.test_is_palindrome _________________________
+[gw3] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_linkedlist.TestSuite testMethod=test_is_palindrome>
+
+    def test_is_palindrome(self):
+>       self.assertTrue(is_palindrome(self.l))
+E       AssertionError: False is not true
+
+tests/test_linkedlist.py:167: AssertionError
+____________________ TestHuffmanCoding.test_huffman_coding _____________________
+[gw9] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_compression.TestHuffmanCoding testMethod=test_huffman_coding>
+
+    def test_huffman_coding(self):
+        HuffmanCoding.encode_file(self.file_in_name, self.file_out_bin_name)
+        HuffmanCoding.decode_file(self.file_out_bin_name, self.file_out_name)
+    
+        with open(self.file_in_name, "rb") as file_1, open(self.file_out_name, "rb") as file_2:
+            content_1 = file_1.read()
+            content_2 = file_2.read()
+    
+>           self.assertEqual(content_1, content_2)
+E           AssertionError: b'G\xf4\xb2\xda\x9c/4?\xf8\x8b\x17B\x98Z\xe[28793 chars]qE]?' != b''
+
+tests/test_compression.py:30: AssertionError
+----------------------------- Captured stdout call -----------------------------
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File encoded.
+File decoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+=========================== short test summary info ============================
+FAILED tests/test_heap.py::TestBinaryHeap::test_insert - AssertionError: List...
+FAILED tests/test_heap.py::TestBinaryHeap::test_remove_min - AssertionError: ...
+FAILED tests/test_linkedlist.py::TestSuite::test_is_palindrome - AssertionErr...
+FAILED tests/test_compression.py::TestHuffmanCoding::test_huffman_coding - As...
+======================== 4 failed, 383 passed in 50.15s ========================
+--- Combined xdist+runparallel Run 2 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+created: 16/16 workers
+16 workers [387 items]
+
+........................................................................ [ 18%]
+........................................................................ [ 37%]
+...........................................F...................F........ [ 55%]
+........................................................................ [ 74%]
+........................................................................ [ 93%]
+..............F..F.........                                              [100%]
+=================================== FAILURES ===================================
+__________________________ TestBinaryHeap.test_insert __________________________
+[gw4] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_heap.TestBinaryHeap testMethod=test_insert>
+
+    def test_insert(self):
+        # Before insert 2: [0, 4, 50, 7, 55, 90, 87]
+        # After insert:  [0, 2, 50, 4, 55, 90, 87, 7]
+        self.min_heap.insert(2)
+>       self.assertEqual([0, 2, 50, 4, 55, 90, 87, 7],
+                         self.min_heap.heap)
+E       AssertionError: Lists differ: [0, 2, 50, 4, 55, 90, 87, 7] != [0, 2, 2, 4, 50, 90, 87, 7, 55]
+E       
+E       First differing element 2:
+E       50
+E       2
+E       
+E       Second list contains 1 additional elements.
+E       First extra element 8:
+E       55
+E       
+E       - [0, 2, 50, 4, 55, 90, 87, 7]
+E       + [0, 2, 2, 4, 50, 90, 87, 7, 55]
+
+tests/test_heap.py:29: AssertionError
+________________________ TestBinaryHeap.test_remove_min ________________________
+[gw4] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_heap.TestBinaryHeap testMethod=test_remove_min>
+
+    def test_remove_min(self):
+        ret = self.min_heap.remove_min()
+        # Before remove_min : [0, 4, 50, 7, 55, 90, 87]
+        # After remove_min: [7, 50, 87, 55, 90]
+        # Test return value
+>       self.assertEqual(4, ret)
+E       AssertionError: 4 != 7
+
+tests/test_heap.py:38: AssertionError
+_________________________ TestSuite.test_is_palindrome _________________________
+[gw13] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_linkedlist.TestSuite testMethod=test_is_palindrome>
+
+    def test_is_palindrome(self):
+>       self.assertTrue(is_palindrome(self.l))
+E       AssertionError: False is not true
+
+tests/test_linkedlist.py:167: AssertionError
+____________________ TestHuffmanCoding.test_huffman_coding _____________________
+[gw9] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_compression.TestHuffmanCoding testMethod=test_huffman_coding>
+
+    def test_huffman_coding(self):
+        HuffmanCoding.encode_file(self.file_in_name, self.file_out_bin_name)
+        HuffmanCoding.decode_file(self.file_out_bin_name, self.file_out_name)
+    
+        with open(self.file_in_name, "rb") as file_1, open(self.file_out_name, "rb") as file_2:
+            content_1 = file_1.read()
+            content_2 = file_2.read()
+    
+>           self.assertEqual(content_1, content_2)
+E           AssertionError: b'G\xf4\xb2\xda\x9c/4?\xf8\x8b\x17B\x98Z\xe[28793 chars]qE]?' != b''
+
+tests/test_compression.py:30: AssertionError
+----------------------------- Captured stdout call -----------------------------
+File encoded.
+File encoded.
+File decoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File encoded.
+File decoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File decoded.
+File encoded.
+File encoded.
+File decoded.
+File decoded.
+File encoded.
+File decoded.File encoded.
+
+File decoded.
+=========================== short test summary info ============================
+FAILED tests/test_heap.py::TestBinaryHeap::test_insert - AssertionError: List...
+FAILED tests/test_heap.py::TestBinaryHeap::test_remove_min - AssertionError: ...
+FAILED tests/test_linkedlist.py::TestSuite::test_is_palindrome - AssertionErr...
+FAILED tests/test_compression.py::TestHuffmanCoding::test_huffman_coding - As...
+======================== 4 failed, 383 passed in 49.60s ========================
+--- Combined xdist+runparallel Run 3 ---
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/nikhilesh/acad/stt/lab6/algorithms
+plugins: run-parallel-0.3.1, xdist-3.6.1
+created: 16/16 workers
+16 workers [387 items]
+
+........................................................................ [ 18%]
+............................................................F........... [ 37%]
+...F....................................................F............... [ 55%]
+........................................................................ [ 74%]
+........................................................................ [ 93%]
+...........................                                              [100%]
+=================================== FAILURES ===================================
+__________________________ TestBinaryHeap.test_insert __________________________
+[gw11] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_heap.TestBinaryHeap testMethod=test_insert>
+
+    def test_insert(self):
+        # Before insert 2: [0, 4, 50, 7, 55, 90, 87]
+        # After insert:  [0, 2, 50, 4, 55, 90, 87, 7]
+        self.min_heap.insert(2)
+>       self.assertEqual([0, 2, 50, 4, 55, 90, 87, 7],
+                         self.min_heap.heap)
+E       AssertionError: Lists differ: [0, 2, 50, 4, 55, 90, 87, 7] != [0, 2, 2, 4, 50, 90, 87, 7, 55]
+E       
+E       First differing element 2:
+E       50
+E       2
+E       
+E       Second list contains 1 additional elements.
+E       First extra element 8:
+E       55
+E       
+E       - [0, 2, 50, 4, 55, 90, 87, 7]
+E       + [0, 2, 2, 4, 50, 90, 87, 7, 55]
+
+tests/test_heap.py:29: AssertionError
+________________________ TestBinaryHeap.test_remove_min ________________________
+[gw11] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_heap.TestBinaryHeap testMethod=test_remove_min>
+
+    def test_remove_min(self):
+        ret = self.min_heap.remove_min()
+        # Before remove_min : [0, 4, 50, 7, 55, 90, 87]
+        # After remove_min: [7, 50, 87, 55, 90]
+        # Test return value
+>       self.assertEqual(4, ret)
+E       AssertionError: 4 != 7
+
+tests/test_heap.py:38: AssertionError
+_________________________ TestSuite.test_is_palindrome _________________________
+[gw2] linux -- Python 3.10.16 /home/nikhilesh/miniconda3/envs/stt6/bin/python
+
+self = <test_linkedlist.TestSuite testMethod=test_is_palindrome>
+
+    def test_is_palindrome(self):
+>       self.assertTrue(is_palindrome(self.l))
+E       AssertionError: False is not true
+
+tests/test_linkedlist.py:167: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_heap.py::TestBinaryHeap::test_insert - AssertionError: List...
+FAILED tests/test_heap.py::TestBinaryHeap::test_remove_min - AssertionError: ...
+FAILED tests/test_linkedlist.py::TestSuite::test_is_palindrome - AssertionErr...
+======================== 3 failed, 384 passed in 49.54s ========================
